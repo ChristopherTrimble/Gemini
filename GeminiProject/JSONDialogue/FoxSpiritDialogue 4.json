@@ -1,0 +1,19 @@
+﻿{
+  "dialogues":
+  [
+    {
+      "id": 1,
+      "speaker": "Fox Spirit",
+      "text": "This area looks dangerous, be careful! There could be traps",
+      "isTerminal": true,
+      "hasOptions": false,
+      "options":
+      [
+        {
+          "text": ""
+        }
+      ]
+    }
+  ]
+}
+    

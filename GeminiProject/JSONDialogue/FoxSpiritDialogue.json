@@ -1,0 +1,61 @@
+﻿{
+  "dialogues":
+  [
+    {
+      "id": 1,
+      "speaker": "Fox Spirit",
+      "text": "Hello Adventure, I am the fox spirit here to guide you through these dungeons and teach you about your light abilities.",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "huh??? Where am I, who are you, what light abilities?",
+          "nextId": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "Fox Spirit",
+      "text": "You have discovered the lair of the Grim, an evil manifestation of human vices. You will use the light abilities I have provided to you to traverse these dungeons.",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "What the, how do I use these light abilities?",
+          "nextId": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "speaker": "Fox Spirit",
+      "text": "Yes, as you can see in the bottom left, there are icons that represent your abilities. You can use the scroll wheel to change the ability and left mouse button to activate them!",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "Hmmm, I'll try them out right now",
+          "nextId": 4
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "speaker": "Fox Spirit",
+      "text": "Yes, I'll see you in the next room!",
+      "isTerminal": true,
+      "hasOptions": false,
+      "options":
+      [
+        {
+          "text": "Hmmm, I'll try them out right now"
+        }
+      ]
+    }
+  ]
+}
+    

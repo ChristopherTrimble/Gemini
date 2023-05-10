@@ -1,0 +1,33 @@
+﻿{
+  "dialogues":
+  [
+    {
+      "id": 1,
+      "speaker": "Fox Spirit",
+      "text": "You will need to use all you've learned to overcome this puzzle, best of luck!",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "Thanks",
+          "nextId": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "Fox Spirit",
+      "text": "",
+      "isTerminal": true,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": ""
+        }
+      ]
+    }
+  ]
+}
+    

@@ -1,0 +1,14 @@
+﻿{
+  "dialogues":
+  [
+    {
+      "id": 1,
+      "speaker": "Rowan",
+      "text": "Scram! this is my place you cant have it!",
+      "isTerminal": true,
+      "hasOptions": false,
+      "isRepeatable": true,
+      "nextValidId": 1
+    }
+  ]
+}

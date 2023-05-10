@@ -1,0 +1,122 @@
+﻿{
+  "dialogues":
+  [
+    {
+      "id": 1,
+      "speaker": "Oliver",
+      "text": "Hey there mister. My stupid cart is broken...",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "I am looking for the Lethe Farm.",
+          "nextId": 2
+        },
+        {
+          "text": "Do you need some help?",
+          "nextId": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "Oliver",
+      "text": "That's where my Dad used to get all out crops... talk to him",
+      "isTerminal": true,
+      "hasOptions": false,
+      "isRepeatable": false,
+      "nextValidId": 1
+    },
+    {
+      "id": 3,
+      "speaker": "Oliver",
+      "text": "Really? i am not strong enough to cut the trees over int the grove down. Can you collect 5 wood for me?",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "Maybe. later kid.",
+          "nextId": 2
+        },
+        {
+          "text": "Sure kid.",
+          "nextId": 4
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "speaker": "Oliver",
+      "isTerminal": true,
+      "hasOptions": false,
+      "hasEvent": true,
+      "eventString": "StartWagonRequest",
+      "text": "Thanks mister that is a big help.",
+      "isRepeatable": false,
+      "nextValidId": 5
+    },
+    {
+      "id": 5,
+      "speaker": "Oliver",
+      "isTerminal": false,
+      "hasOptions": true,
+      "text": "Did you bring back the 5 wood?",
+      "hasEvent": true,
+      "eventString": "CheckForWagonResources",
+      "options":
+      [
+        {
+          "conditions": [true],
+          "text": "Yeah, Here it is",
+          "nextId": 6
+        },
+        {
+          "conditions": [true, false],
+          "text": "No, Not yet Ill be right back.",
+          "nextId": 9
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "speaker": "Oliver",
+      "isTerminal": true,
+      "hasOptions": false,
+      "text": "Thanks mister you are a life saver",
+      "hasEvent": true,
+      "eventString": "FinishWagonRequest",
+      "isRepeatable": false,
+      "nextValidId": 7
+    },
+    {
+      "id": 7,
+      "speaker": "Oliver",
+      "isTerminal": true,
+      "hasOptions": false,
+      "text": "Thanks mister for you help with the wagon",
+      "hasEvent": false,
+      "isRepeatable": true,
+      "nextValidId": 7
+    },
+    {
+      "id": 8,
+      "speaker": "Oliver",
+      "isTerminal": true,
+      "hasOptions": false,
+      "text": "Stupid cart...",
+      "hasEvent": false,
+      "isRepeatable": true
+    },
+    {
+      "id": 9,
+      "speaker": "Oliver",
+      "isTerminal": true,
+      "hasOptions": false,
+      "text": "OKay. Hurry back.",
+      "isRepeatable": false,
+      "nextValidId": 5
+    }
+  ]
+}

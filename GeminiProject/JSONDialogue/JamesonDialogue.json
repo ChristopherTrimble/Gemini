@@ -1,0 +1,89 @@
+﻿{
+  "dialogues":
+  [
+    {
+      "id": 1,
+      "speaker": "Jameson",
+      "text": "Ah Ha! A visitor. Rooms at the tavern are half off!! I am Jameson, the local tavern keep. Why dont you come on in and take a load off?",
+      "isTerminal": true,
+      "isRepeatable": true,
+      "hasOptions": false
+    },
+    {
+      "id": 11,
+      "speaker": "Jameson",
+      "text": "I still have some rooms available if you need one.",
+      "isTerminal": true,
+      "hasOptions": false
+    },
+    {
+      "id": 10,
+      "speaker": "Jameson",
+      "text": "Ah Ha! A visitor. Rooms at the tavern are half off!! I am Jameson, the local tavern keep. What brings you to town boy?",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "I am looking for the Lethe Farm.",
+          "nextId": 3
+        },
+        {
+          "text": "Recent happenings?",
+          "nextId": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "Jameson",
+      "text": "Ha! Happenings? You sound like that old kook that runs the smithy. Better watch who you say such things to boy, dont go scaring away my customers.",
+      "isTerminal": true,
+      "hasOptions": false,
+      "isRepeatable": false,
+      "nextValidId": 10
+    },
+    {
+      "id": 3,
+      "speaker": "Jameson",
+      "text": "Dont get me started! Arthur up and disappeared leaving me without a vendor for the tavern. If you ask me good riddance never really liked the man.",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "Disappeared???",
+          "nextId": 4
+        },
+        {
+          "text": "What was your problem with Arthur",
+          "nextId": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "speaker": "Jameson",
+      "isTerminal": true,
+      "hasOptions": false,
+      "hasEvent": true,
+      "eventString": "TransitionToUponArrivalStage3",
+      "text": "Bahh! Sounds like Arthur never holds up his side of a bargain. Sorry boy, maybe old man Otis knows more. I still have those rooms available if you need one.",
+      "nextValidId": 1
+    },
+    {
+      "id": 5,
+      "speaker": "Jameson",
+      "isTerminal": false,
+      "text": "Honestly, always felt like the guy was up to know good since he took over that damned farm. But enough about that. I still have those rooms available if you need one.",
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "Disappeared???",
+          "nextId": 4
+        }
+      ]
+    }
+  ]
+}

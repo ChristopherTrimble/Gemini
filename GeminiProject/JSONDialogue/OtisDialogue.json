@@ -1,0 +1,186 @@
+﻿{
+  "dialogues":
+  [
+    {
+      "id": 1,
+      "speaker": "Otis",
+      "text": "Oh hello there son. I haven't seen visitors around here lately. I am Otis grandmaster alchemist and historian of this village. Can I help you?",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "I'm not really visiting",
+          "nextId": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "Otis",
+      "text": "You must be his nephew... He told me you were coming. Unfortunately you uncle isn't in town anymore.",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "Wait! You knew I was coming?",
+          "nextId": 3
+        },
+        {
+          "text": "What do you mean?",
+          "nextId": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "speaker": "Otis",
+      "text": "Yes that is true, but I have seen him since... Do you know of the happenings?",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "What does that have to do with my uncle?",
+          "nextId": 5
+        },
+        {
+          "text": "What do you mean happenings?",
+          "nextId": 4
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "speaker": "Otis",
+      "text": "Its hard to explain it, as its not just one thing, bizarre sounds, people missing, belongings stolen, everybody in town has had different unexplained issues arise.",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "What does that have to do with my uncle?",
+          "nextId": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "speaker": "Otis",
+      "text": "Well... He 'left' or 'disappeared' depending on who you ask just as things started getting bad around here.",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "What are you saying?",
+          "nextId": 6
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "speaker": "Otis",
+      "text": "I am saying I need you help. Last time I saw Arthur he led be to believe someone or something is behind all of this. IF we solve that mystery we may just find your uncle. Will you help me?",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "Yes, What do I do?",
+          "nextId": 7
+        },
+        {
+          "text": "I really didnt come here to get involved.",
+          "nextId": 8
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "speaker": "Otis",
+      "text": "Well. that's the problem, He didnt really give me anywhere to start. Maybe work with the other villages maybe their issues will lead you to the larger cause",
+      "isTerminal": true,
+      "isRepeatable": false,
+      "hasEvent": true,
+      "eventString": "FinishUponArrival",
+      "nextValidId": 11
+    },
+    {
+      "id": 8,
+      "speaker": "Otis",
+      "text": "He may be in trouble but I understand, Come to me if you change your mind son.",
+      "isTerminal": true,
+      "hasOptions": false,
+      "isRepeatable": false,
+      "nextValidId": 6
+    },
+    {
+      "id": 9,
+      "speaker": "Otis",
+      "text": "I sure hope you can find your uncle son.",
+      "isTerminal": true,
+      "hasOptions": false,
+      "isRepeatable": true,
+      "nextValidId": 9
+    },
+    {
+      "id": 10,
+      "speaker": "Otis",
+      "text": "Hi, There sorry I am much to busy to talk at the moment.",
+      "isTerminal": true,
+      "hasOptions": false,
+      "isRepeatable": true
+    },
+    {
+      "id": 11,
+      "speaker": "Otis",
+      "text": "I know you are looking for your Uncle but his disappearance seems to coincide with the other strange phenomenon occuring in the village, Maybe if you investigate those occurence we can learn something about you uncle complete 3 villager requests",
+      "isTerminal": false,
+      "hasOptions": true,
+      "isRepeatable": false,
+      "options":
+      [
+        {
+          "text": "On it",
+          "nextId": 14
+        },
+        {
+          "text": "Where should I start?",
+          "nextId": 15
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "speaker": "Otis",
+      "text": "Finish helping out those villagers",
+      "isTerminal": true,
+      "hasOptions": false,
+      "isRepeatable": true
+    },
+    {
+      "id": 14,
+      "speaker": "Otis",
+      "text": "Good Luck",
+      "isTerminal": true,
+      "hasOptions": false,
+      "isRepeatable": false,
+      "hasEvent": true,
+      "eventString": "StartHelpingOutQuest",
+      "nextValidId": 13
+    },
+    {
+      "id": 15,
+      "speaker": "Otis",
+      "text": "Try speaking with the merchant's boy Oliver",
+      "isTerminal": true,
+      "hasOptions": false,
+      "isRepeatable": false,
+      "hasEvent": true,
+      "eventString": "StartHelpingOutQuest",
+      "nextValidId": 13
+    }
+  ]
+}

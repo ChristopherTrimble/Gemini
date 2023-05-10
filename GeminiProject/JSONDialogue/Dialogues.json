@@ -1,0 +1,67 @@
+﻿{
+  "dialogues": 
+  [
+    {
+      "id": 1,
+      "speaker": "NPC",
+      "text": "Hello, adventurer! What brings you to this town?",
+      "options": 
+      [
+        {
+          "text": "I'm looking for a quest.",
+          "nextId": 2
+        },
+        {
+          "text": "Just passing through.",
+          "nextId": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "NPC",
+      "text": "Excellent! We could use someone like you. I have a task that needs to be done.",
+      "options": [
+        {
+          "text": "What do you need done?",
+          "nextId": 4
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "speaker": "NPC",
+      "text": "Well, if you need anything, just let me know.",
+      "options": [
+        {
+          "text": "Thanks, I will.",
+          "nextId": -1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "speaker": "NPC",
+      "text": "There's a dragon causing trouble on the outskirts of town. We need someone to defeat it.",
+      "condition": "dragonDefeated == false",
+      "options": [
+        {
+          "text": "I'll do it!",
+          "nextId": -1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "speaker": "NPC",
+      "text": "You've already defeated the dragon. Is there anything else I can help you with?",
+      "condition": "dragonDefeated == true",
+      "options": [
+        {
+          "text": "No, that's all. Thank you!",
+          "nextId": -1
+        }
+      ]
+    }
+  ]
+}

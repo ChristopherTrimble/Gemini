@@ -1,0 +1,14 @@
+﻿{
+  "dialogues":
+  [
+    {
+      "id": 1,
+      "speaker": "Thomas",
+      "text": "Hi, I am Thomas",
+      "isTerminal": true,
+      "hasOptions": false,
+      "isRepeatable": true,
+      "nextValidId": 1
+    }
+  ]
+}

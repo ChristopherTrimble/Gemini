@@ -1,0 +1,112 @@
+﻿{
+  "dialogues":
+  [
+    {
+      "id": 1,
+      "speaker": "Simon",
+      "text": "Hello there, stranger. I'm Simon, I run the market place here in town.",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "Nice to meet you Simon",
+          "nextId": 2
+        },
+        {
+          "text": "I am just passing through.",
+          "nextId": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "Simon",
+      "text": "It's nice to meet you too. Its strange seeing somebody come into town during these times.",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options": [
+        {
+          "text": "These times? What do you mean.",
+          "nextId": 4
+        },
+        {
+          "text": "Do you know Arthur?",
+          "nextId": 5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "speaker": "Simon",
+      "text": "Oh. Umm. I see. I wish you well.",
+      "isTerminal": true,
+      "hasOptions": false,
+      "isRepeatable": false,
+      "nextValidId": 7
+    },
+    {
+      "id": 4,
+      "speaker": "Simon",
+      "isTerminal": false,
+      "hasOptions": true,
+      "text": "Well it depends on who you're asking, some people believe while others do not. I don't know exactly what's going on, but there have been strange noises at night, missing villagers, and rumors of dark magic. I've tried to keep the market open and provide for my son, but it's getting harder every day.",
+      "options": [
+        {
+          "text": "I heard from him a week ago",
+          "nextId": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "speaker": "Simon",
+      "text": "Oh... Uh. I am sorry to be the one telling you this but no body has heard from Arthur in nearly a month.",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options": [
+        {
+          "text": "That's not possible...",
+          "nextId": 8
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "speaker": "Simon",
+      "text": "a.. again sorry about you uncle.",
+      "isTerminal": true,
+      "hasOptions": false,
+      "isRepeatable": true,
+      "nextValidId": 6
+    },
+    {
+      "id": 7,
+      "speaker": "Simon",
+      "text": "oh uhh, hey there how can I help you?",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options": [
+        {
+          "text": "What did you mean by 'these times'.",
+          "nextId": 4
+        },
+        {
+          "text": "Arthur. You know him?",
+          "nextId": 5
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "speaker": "Simon",
+      "text": "I dont know much more. Maybe Speak with Jameson",
+      "isTerminal": true,
+      "hasOptions": false,
+      "hasEvent": true,
+      "eventString": "TransitionToUponArrivalStage2",
+      "isRepeatable": false,
+      "nextValidId": 6
+    }
+  ]
+}

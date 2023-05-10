@@ -1,0 +1,33 @@
+﻿{
+  "dialogues":
+  [
+    {
+      "id": 1,
+      "speaker": "Fox Spirit",
+      "text": "Hello again, it looks like you will need an ability that can take you to higher elevations.",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "Let me take a look",
+          "nextId": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "Fox Spirit",
+      "text": "See you in the next room!",
+      "isTerminal": true,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "Will do!"
+        }
+      ]
+    }
+  ]
+}
+    

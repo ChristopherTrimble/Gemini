@@ -1,0 +1,33 @@
+﻿{
+  "dialogues":
+  [
+    {
+      "id": 1,
+      "speaker": "Fox Spirit",
+      "text": "The hook ability allows you to grab objects as well as activate objects",
+      "isTerminal": false,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": "I'll try that right now",
+          "nextId": 2
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "speaker": "Fox Spirit",
+      "text": "Sounds good",
+      "isTerminal": true,
+      "hasOptions": true,
+      "options":
+      [
+        {
+          "text": ""
+        }
+      ]
+    }
+  ]
+}
+    
